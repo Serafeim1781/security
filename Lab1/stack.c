@@ -8,6 +8,7 @@
 int bof(char *str){
 	char buffer[48];
 	/* The following statement has a buffer overflow problem */
+	printf("o buffer einai %p\n",buffer);
 	strcpy(buffer, str);
 	return 1;
 }
